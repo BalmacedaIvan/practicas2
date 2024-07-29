@@ -1,0 +1,124 @@
+.register-titlle h1, h4 {
+    letter-spacing: 0;
+    font-family: Raleway,sans-serif;
+    font-weight: 900 !important;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+
+}
+
+.register-titlle h4 {
+    width: 100%;
+    color: #CB4335 ;
+    box-sizing: border-box
+}
+
+
+.register {
+    position: relative; /* Necesario para que el pseudo-elemento ::before se posicione correctamente */
+    background-image: url('/css/imagenes/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.register::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.register > * {
+    position: relative;
+    z-index: 2; /* Coloca el contenido por encima de la capa semitransparente */
+}
+
+.card-register {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 80%; 
+    max-width: 400px; 
+    min-width: 300px; 
+    margin: 0 20px; 
+}
+
+/* Hacer que los inputs tengan fondo transparente */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;  
+    color: #EBEDEF !important; 
+    border-radius: 5px !important; 
+    box-shadow: none !important; 
+    padding: 0.375rem 0.75rem !important; 
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3) !important; 
+    border-color: rgba(255, 255, 255, 0.7) !important; 
+    box-shadow: none !important; 
+}
+
+.form-label {
+    color: #EBEDEF !important;
+    font-family: Raleway, sans-serif !important; 
+}
+/*------------------------------------------------------------------*/ 
+.btn-ingresar {
+    border-radius: 30px !important;
+    width: 80%;
+    max-width: 400px;
+    min-width: 80px;
+    background-color: #34495E !important;
+    border: #34495E !important;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-ingresar:hover {
+    background-color: #2C3E50 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.password-help{
+    color: #D5D8DC   !important;
+    
+}
+
+.card-basico{
+    background-color: #839192 !important;
+}
+
+.card-premium{
+    background-color: #9A7D0A !important;
+}
+.card-plan-title{
+    letter-spacing: 0;
+    font-family: Raleway,sans-serif;
+    font-weight: 900 !important;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+
+}
