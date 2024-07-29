@@ -19,7 +19,7 @@
 }
 
 .login {
-    position: relative; /* Necesario para que el pseudo-elemento ::before se posicione correctamente */
+    position: relative;
     background-image: url('/css/imagenes/bg2.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -83,6 +83,8 @@
 /*------------------------------------------------------------------*/ 
 
 .btn-ingresar {
+    font-family: Raleway,sans-serif !important;
+    font-weight: 800 !important;
     border-radius: 30px !important;
     width: 80%;
     max-width: 400px;
@@ -100,6 +102,8 @@
 }
 
 .password-help{
+    font-family: Raleway,sans-serif !important;
+    font-weight: 400 !important;
     color: #D5D8DC   !important;
     
 }

@@ -1,3 +1,4 @@
+
 .register-titlle h1, h4 {
     letter-spacing: 0;
     font-family: Raleway,sans-serif;
@@ -24,7 +25,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100vw;
     color: azure;
     display: flex;
@@ -82,6 +84,8 @@
 }
 /*------------------------------------------------------------------*/ 
 .btn-ingresar {
+    font-family: Raleway,sans-serif !important;
+    font-weight: 800 !important;
     border-radius: 30px !important;
     width: 80%;
     max-width: 400px;
