@@ -1,0 +1,38 @@
+body {
+    background-color: #212F3C !important;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+}
+
+.navbar{
+    background-color: #17202A ;
+}
+
+
+.card{
+    background-color: #17202A ;
+}
+
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+
+.card-title{
+    color: #CB4335;
+}
+
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+    background-color: #f45644;
+    border-style: none;
+}
+
+.btn-primary:hover{
+    background-color: #ff2911;
+    
+}
+
