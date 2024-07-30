@@ -99,3 +99,7 @@ body {
 .navbar {
     background-color: #283747 !important;
 }
+
+.card-body a{
+    text-decoration: none;
+}
