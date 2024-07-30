@@ -1,0 +1,166 @@
+body {
+    background-color: #212F3C !important;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+.principal {
+    background-color: #17202A;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Elimina cualquier margen */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.btn-atras {
+    background-color: #CB4335 !important; /* Color del botón */
+    border: none;
+    color: white !important;
+}
+
+.btn-atras:hover {
+    background-color: #C62828 !important; /* Color del botón al pasar el ratón */
+}
+.bienvenida h1, h4 {
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900 !important;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.bienvenida h4 {
+    width: 100%;
+    color: #CB4335;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #283747 !important;
+    border: #283747 !important;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: auto !important;
+    height: 15rem !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-bottom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible */
+    flex-shrink: 0;
+}
+
+.card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ABB2B9 !important;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.card-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.card-body h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.card-title {
+    color: #ABB2B9 !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; /* Ajusta el peso de la fuente según lo necesario */
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #283747 !important;
+}
+
+.btn-red {
+    background-color: #CB4335 !important;
+    border: none;
+    color: white !important;
+    margin: 3px;
+}
+
+.btn-red:hover {
+    background-color: #C62828 !important;
+}
+
+.btn-row {
+    margin-bottom: 1rem;
+}
+
+.btn-col {
+    flex: 1 0 16.666%; /* 100% / 6 buttons per row */
+    margin-bottom: 1rem;
+}
+
+.btn-close{
+    background-color: #fafafa !important;
+}
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.modal-dialog {
+    max-width: 90%;
+
+}
+
+.modal-content{
+    background-color: #17202A !important;
+}
+
+.modal-title{
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900 !important;
+    color: #fafafa;
+
+}
+
+.reserva{
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900 !important;
+    color: #fafafa;
+
+}

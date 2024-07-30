@@ -109,10 +109,12 @@
 
 .card-basico{
     background-color: #839192 !important;
+    border-radius: 0% !important;
 }
 
 .card-premium{
-    background-color: #9A7D0A !important;
+    background-color: #8E44AD  !important;
+    border-radius: 0% !important;
 }
 .card-plan-title{
     letter-spacing: 0;
@@ -125,4 +127,60 @@
     margin-bottom: 5px;
     width: 100%;
 
+}
+
+.precio {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 20px 0
+}
+
+.signo {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 22px;
+    display: inline-block
+}
+
+.numero {
+    max-width: 300px;
+    color: #fff;
+    flex: 0 auto;
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px,4.5vw,75px);
+    line-height: clamp(24px,3.5vw,70px)
+}
+
+.tiempo {
+    color: #fff;
+    font-size: clamp(13px,3.5vw,25px);
+    display: inline-block;
+    margin-left: 10px
+}
+
+.tick {
+    color: #CB4335;
+    padding-right: 20px;
+    font-size: clamp(12px,2.2vw,30px)
+}
+
+.beneficios {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:right !important;
+    gap: 10px
+}
+
+.beneficio {
+    font-family: Roboto,sans-serif !important;
+    font-size: clamp(12px,1.5vw,20px);
+    line-height: clamp(16px,2vw,20px)
+}
+
+.rojo {
+    color: #CB4335;
+    font-size: clamp(12px,1.5vw,20px)
 }
