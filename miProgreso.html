@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Mi Rutina</a>
+                <a class="nav-link" href="miRutina.html">Mi Rutina</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="miProgreso.html">Mi Progreso</a>
@@ -38,85 +38,252 @@
         
 
           <div class="container py-5">
-            <h1 class="rutina-title texte-center">¡TU PROGRESO!</h1>
+            <div class="proheader d-flex">
+              <h1 class="rutina-title texte-center">¡TU PROGRESO!</h1>
+            <button class="savebutton btn btn-primary h-115 mx-3 d-inline" onclick="saveProgress()">GUARDAR</button>
+            
+            </div>
             <p>_______________________________________________</p>
  
                 <div class="container prog-container border p-5 rounded">
 
-                    <div class="container shadow">
-                        <div class="prog-title d-flex">
-                            <h3>BICEPS SCOTT</h3>
-                            <button class="btn btn-success mx-4 my-1">Guardar</button>
-                        </div>
-                        <div class="row">
-                          <div class="col box border">Set</div>
-                          <div class="col box border">Previous</div>
-                          <div class="col box border">Kgs</div>
-                          <div class="col box border">Reps</div>
-                        </div>
-                        <div class="row">
-                          <div class="col box border">1</div>
-                          <div class="col box border"><input type="text"></div>
-                          <div class="col box border"><input type="number"></div>
-                          <div class="col box border"><input type="text"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col box border">2</div>
-                            <div class="col box border"><input type="text"></div>
-                            <div class="col box border"><input type="number"></div>
-                            <div class="col box border"><input type="text"></div>
-                        </div>
-                    </div>
+    
+                  <div class="container mt-4">
+                    <div class="row">
 
-                    <div class="container py-5">
-                        <div class="prog-title">
-                            <h3>BICEPS SCOTT</h3>
-                        </div>
-                        <div class="row">
-                          <div class="col box border">Set</div>
-                          <div class="col box border">Previous</div>
-                          <div class="col box border">Kgs</div>
-                          <div class="col box border">Reps</div>
-                        </div>
-                        <div class="row">
-                          <div class="col box border">1</div>
-                          <div class="col box border"><input type="text"></div>
-                          <div class="col box border"><input type="number"></div>
-                          <div class="col box border"><input type="text"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col box border">2</div>
-                            <div class="col box border"><input type="text"></div>
-                            <div class="col box border"><input type="number"></div>
-                            <div class="col box border"><input type="text"></div>
-                        </div>
-                    </div>
 
-                    <div class="container py-5">
-                        <div class="prog-title">
-                            <h3>BICEPS SCOTT</h3>
-                        </div>
-                        <div class="row">
-                          <div class="col box border">Set</div>
-                          <div class="col box border">Previous</div>
-                          <div class="col box border">Kgs</div>
-                          <div class="col box border">Reps</div>
-                        </div>
-                        <div class="row">
-                          <div class="col box border">1</div>
-                          <div class="col box border"><input type="text"></div>
-                          <div class="col box border"><input type="number"></div>
-                          <div class="col box border"><input type="text"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col box border">2</div>
-                            <div class="col box border"><input type="text"></div>
-                            <div class="col box border"><input type="number"></div>
-                            <div class="col box border"><input type="text"></div>
-                        </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="card">
+                  <div class="card-body">
+                      <h3 class="d-inline">BICEPS SCOTT</h3>
+                      <div class="table-responsive mt-3">
+                          <table class="table table-bordered">
+                              <thead>
+                                  <tr>
+                                      <th>Series</th>
+                                      <th>Peso-Kg</th>
+                                      <th>Repeticiones</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>Serie 1</td>
+                                      <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                      <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Serie 2</td>
+                                      <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                      <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Serie 3</td>
+                                      <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                      <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+           <!-- Repetir este bloque para cada grilla hija -->
+           <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="d-inline">PRESS MILITAR</h3>
+                    <div class="table-responsive mt-3">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Series</th>
+                                    <th>Peso-Kg</th>
+                                    <th>Repeticiones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Serie 1</td>
+                                    <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                    <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                                </tr>
+                                <tr>
+                                    <td>Serie 2</td>
+                                    <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                    <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                                </tr>
+                                <tr>
+                                    <td>Serie 3</td>
+                                    <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                    <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-        
-                   
+                </div>
+            </div>
+        </div>
+
+         <!-- Repetir este bloque para cada grilla hija -->
+         <div class="col-md-4 mb-4">
+          <div class="card">
+              <div class="card-body">
+                  <h3 class="d-inline">SENTADILLAS</h3>
+                  <div class="table-responsive mt-3">
+                      <table class="table table-bordered">
+                          <thead>
+                              <tr>
+                                  <th>Series</th>
+                                  <th>Peso-Kg</th>
+                                  <th>Repeticiones</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Serie 1</td>
+                                  <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                  <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                              </tr>
+                              <tr>
+                                  <td>Serie 2</td>
+                                  <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                  <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                              </tr>
+                              <tr>
+                                  <td>Serie 3</td>
+                                  <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                  <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+       <!-- Repetir este bloque para cada grilla hija -->
+       <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="d-inline">ABDOMINALES</h3>
+                <div class="table-responsive mt-3">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Series</th>
+                                <th>Peso-Kg</th>
+                                <th>Repeticiones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Serie 1</td>
+                                <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                            </tr>
+                            <tr>
+                                <td>Serie 2</td>
+                                <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                            </tr>
+                            <tr>
+                                <td>Serie 3</td>
+                                <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                                <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Repetir este bloque para cada grilla hija -->
+     <div class="col-md-4 mb-4">
+      <div class="card">
+          <div class="card-body">
+              <h3 class="d-inline">VUELOS LATERALES</h3>
+              <div class="table-responsive mt-3">
+                  <table class="table table-bordered">
+                      <thead>
+                          <tr>
+                              <th>Series</th>
+                              <th>Peso-Kg</th>
+                              <th>Repeticiones</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Serie 1</td>
+                              <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                              <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                          </tr>
+                          <tr>
+                              <td>Serie 2</td>
+                              <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                              <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                          </tr>
+                          <tr>
+                              <td>Serie 3</td>
+                              <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                              <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+
+   <!-- Repetir este bloque para cada grilla hija -->
+   <div class="col-md-4 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="d-inline">REMO CON BARRA</h3>
+            
+            <div class="table-responsive mt-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Series</th>
+                            <th>Peso-Kg</th>
+                            <th>Repeticiones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Serie 1</td>
+                            <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                            <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                        </tr>
+                        <tr>
+                            <td>Serie 2</td>
+                            <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                            <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                        </tr>
+                        <tr>
+                            <td>Serie 3</td>
+                            <td><input type="number" class="form-control" placeholder="Ingrese peso"></td>
+                            <td><input type="number" class="form-control" placeholder="Ingrese repeticiones"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+                      
+
+                        <!-- Copia y pega el bloque anterior para crear más grillas hijas -->
+                    </div>
+                </div>
                    
 
 

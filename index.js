@@ -31,3 +31,20 @@ function success(){
       });
 }
 
+function saveProgress(){
+  Swal.fire({
+    title: "Deseas guardar el Progreso de hoy?",
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: "Si!",
+    denyButtonText: `No guardar`
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      Swal.fire("Excelente!", "", "success");
+    } else if (result.isDenied) {
+      Swal.fire("Cambios descartados", "", "info");
+    }
+  });
+}
+
